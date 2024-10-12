@@ -10,13 +10,17 @@
             font-family: 'Roboto', sans-serif;
             background-color: #f0f0f0;
             color: #333;
-            max-width: 900px;
+            max-width: 1200px;
             margin: 2em auto;
             padding: 1em;
             line-height: 1.6;
+        }
+        .container {
             background: #fff;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding: 2em;
         }
         h1, h2 {
             color: #2c3e50;
@@ -25,25 +29,30 @@
             display: flex;
             flex-direction: column;
             gap: 1em;
-            margin-bottom: 1em;
+            margin-bottom: 2em;
+            background: #ffffff;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         input[type="email"], textarea {
-            padding: 10px;
+            padding: 12px;
             border: 1px solid #ccc;
             border-radius: 5px;
             width: 100%;
-            max-width: 500px;
+            max-width: 600px;
             margin: 0 auto;
         }
         button {
-            padding: 10px;
+            padding: 12px;
             background-color: #007bff;
             color: #fff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            max-width: 150px;
+            max-width: 200px;
             margin: 0 auto;
+            transition: background-color 0.3s;
         }
         button:hover {
             background-color: #0056b3;
@@ -66,9 +75,10 @@
             float: left;
             width: 25%;
             margin-right: 2em;
-            background: #f8f9fa;
-            padding: 1em;
+            background: #ffffff;
+            padding: 1.5em;
             border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         .content {
             float: left;
@@ -84,56 +94,60 @@
             padding: 0;
         }
         .category-list li {
-            padding: 0.5em;
-            border-bottom: 1px solid #ccc;
+            padding: 0.8em;
+            border-bottom: 1px solid #ddd;
         }
         .category-list li a {
             text-decoration: none;
             color: #007bff;
+            font-weight: 500;
         }
         .category-list li a:hover {
             text-decoration: underline;
         }
         .intro-text {
-            padding: 1em;
+            padding: 2em;
             background: #e9ecef;
             border-radius: 10px;
-            margin-bottom: 1em;
+            margin-bottom: 2em;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Öğrenmek İstediğiniz Bilgiyi Bize İletin, Sizinle Bilgimizi Paylaşalım!</h1>
-        <form action="https://formspree.io/f/mnnqqqkw" method="POST">
-            <label for="email">Email Adresiniz:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Mesajınız:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            <button type="submit">Gönder</button>
-        </form>
-        <p style="font-size: 0.9em; color: #666;">bilgidir.com hata yapabilir. Önemli bilgileri kontrol edin.</p>
-    </div>
-    <div class="clearfix">
-        <div class="sidebar">
-            <h2>Kategoriler</h2>
-            <ul class="category-list">
-                <li><a href="#teknoloji">Teknoloji ve Yenilikler</a></li>
-                <li><a href="#is-girisimcilik">İş ve Girişimcilik</a></li>
-                <li><a href="#doga-cevre">Doğa ve Çevre</a></li>
-                <li><a href="#saglik-yasam">Sağlık ve Yaşam Tarzı</a></li>
-                <li><a href="#kultur-sanat">Kültür ve Sanat</a></li>
-                <li><a href="#bilim-teknoloji-tarihi">Bilim ve Teknoloji Tarihi</a></li>
-                <li><a href="#gezi-kultur">Gezi ve Kültür</a></li>
-                <li><a href="#tarih-mitoloji">Tarih ve Mitoloji</a></li>
-                <li><a href="#guncel-olaylar">Güncel Olaylar ve Trendler</a></li>
-            </ul>
+    <div class="container">
+        <div class="header">
+            <h1>Öğrenmek İstediğiniz Bilgiyi Bize İletin, Sizinle Bilgimizi Paylaşalım!</h1>
+            <form action="https://formspree.io/f/mnnqqqkw" method="POST">
+                <label for="email">Email Adresiniz:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mesajınız:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Gönder</button>
+            </form>
+            <p style="font-size: 0.9em; color: #666; text-align: center;">bilgidir.com hata yapabilir. Önemli bilgileri kontrol edin.</p>
         </div>
-        <div class="content">
-            <div class="intro-text">
-                <strong>Bilgidir.com - Bilgiye Dair Her Şey!</strong>
-                <p>Bilgidir.com, sizlere teknoloji, sanat, bilim, sağlık gibi birçok farklı konuda bilgi sunmak amacıyla oluşturulmuş bir bilgi paylaşım platformudur. Öğrenmek istediğiniz herhangi bir konu hakkında bize sorularınızı iletebilir, kısa sürede sizlere detaylı bilgi sağlamak için buradayız.</p>
-                <p><strong>Kategorilerimizde gezinebilir, ilginizi çeken konuları keşfedebilirsiniz.</strong> Hedefimiz, bilgiye kolay erişimi ve paylaşımı mümkün kılmak!</p>
+        <div class="clearfix">
+            <div class="sidebar">
+                <h2>Kategoriler</h2>
+                <ul class="category-list">
+                    <li><a href="#teknoloji">Teknoloji ve Yenilikler</a></li>
+                    <li><a href="#is-girisimcilik">İş ve Girişimcilik</a></li>
+                    <li><a href="#doga-cevre">Doğa ve Çevre</a></li>
+                    <li><a href="#saglik-yasam">Sağlık ve Yaşam Tarzı</a></li>
+                    <li><a href="#kultur-sanat">Kültür ve Sanat</a></li>
+                    <li><a href="#bilim-teknoloji-tarihi">Bilim ve Teknoloji Tarihi</a></li>
+                    <li><a href="#gezi-kultur">Gezi ve Kültür</a></li>
+                    <li><a href="#tarih-mitoloji">Tarih ve Mitoloji</a></li>
+                    <li><a href="#guncel-olaylar">Güncel Olaylar ve Trendler</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="intro-text">
+                    <strong>Bilgidir.com - Bilgiye Dair Her Şey!</strong>
+                    <p>Bilgidir.com, sizlere teknoloji, sanat, bilim, sağlık gibi birçok farklı konuda bilgi sunmak amacıyla oluşturulmuş bir bilgi paylaşım platformudur. Öğrenmek istediğiniz herhangi bir konu hakkında bize sorularınızı iletebilir, kısa sürede sizlere detaylı bilgi sağlamak için buradayız.</p>
+                    <p><strong>Kategorilerimizde gezinebilir, ilginizi çeken konuları keşfedebilirsiniz.</strong> Hedefimiz, bilgiye kolay erişimi ve paylaşımı mümkün kılmak!</p>
+                </div>
             </div>
         </div>
     </div>
