@@ -21,20 +21,37 @@
         h1, h2 {
             color: #2c3e50;
         }
-        .main-header {
-            text-align: center;
-            background-color: #2c3e50;
-            color: #fff;
+        #header {
+            position: sticky;
+            top: 0;
+            background: #ffffff;
             padding: 1em;
-            border-radius: 10px;
-            margin-bottom: 1.5em;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        #header h1 {
+            margin: 0;
+        }
+        #form-section {
+            margin: 2em 0;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div class="main-header">
+    <div id="header">
         <h1>Öğrenmek İstediğiniz Bilgiyi Bize İletin, Sizinle Bilgimizi Paylaşalım!</h1>
-        <p>Bilgidir.com, merak ettiğiniz konularda size bilgi sunmak için burada. Talebinizi gönderin, 48 saat içinde detaylı bilgi ile geri dönüş yapalım.</p>
+    </div>
+
+    <div id="form-section">
+        <form action="https://formspree.io/f/mnnqqqkw" method="POST">
+            <label for="email">Email Adresiniz:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Mesajınız:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <button type="submit">Gönder</button>
+        </form>
+        <p><small>bilgidir.com hata yapabilir. Önemli bilgileri kontrol edin.</small></p>
     </div>
 
     <h1>Fotoğrafçılığın Tarihi</h1>
@@ -50,16 +67,5 @@
         <li><strong>Steve McCurry:</strong> 1984 yılında National Geographic dergisi için çektiği "Afgan Kızı" fotoğrafı, dünyanın en ünlü portrelerinden biri olmuştur. Çalışmaları genellikle çatışma bölgelerindeki insanları ve kültürel hayatı belgelemiştir.</li>
         <li><strong>Egemen Pırlant:</strong> Günümüz fotoğrafçılarından olan Egemen Pırlant, özellikle sokak fotoğrafçılığı ve şehir yaşamını belgeleyen tarzıyla tanınmaktadır. Modern şehirlerin dinamizmini ve günlük hayatın anlarını yakalamadaki yeteneği, onu bu alanda öne çıkan isimlerden biri yapmaktadır.</li>
     </ul>
-
-    <form action="https://formspree.io/f/mnnqqqkw" method="POST">
-        <h2>Bizimle İletişime Geçin</h2>
-        <label for="email">E-posta Adresiniz:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="message">Mesajınız:</label><br>
-        <textarea id="message" name="message" rows="4" required></textarea><br><br>
-        <button type="submit">Gönder</button>
-    </form>
-
-    <p style="font-size: 0.8em; color: #555;">Dipnot: Bilgidir.com hata yapabilir. Önemli bilgileri kontrol edin.</p>
 </body>
 </html>
