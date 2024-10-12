@@ -10,63 +10,74 @@
             font-family: 'Roboto', sans-serif;
             background-color: #f0f0f0;
             color: #333;
-            max-width: 1200px;
+            max-width: 900px;
             margin: 2em auto;
             padding: 1em;
             line-height: 1.6;
             background: #fff;
             border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1, h2 {
             color: #2c3e50;
         }
         .header {
             text-align: center;
-            margin-bottom: 2em;
-            padding: 2em;
-            background: linear-gradient(135deg, #007bff, #00d2ff);
-            border-radius: 15px;
-            color: #fff;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 1em;
+            padding: 1em;
+            background: #f8f9fa;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 0 auto;
         }
         form {
             display: flex;
             flex-direction: column;
-            gap: 1.2em;
-            margin-bottom: 2em;
-            align-items: center;
+            gap: 1em;
+            margin-bottom: 1em;
         }
         input[type="email"], textarea {
-            padding: 15px;
+            padding: 10px;
             border: 1px solid #ccc;
-            border-radius: 10px;
+            border-radius: 5px;
             width: 100%;
-            max-width: 600px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            font-size: 1em;
+            max-width: 500px;
+            margin: 0 auto;
         }
         button {
-            padding: 12px 20px;
+            padding: 10px;
             background-color: #007bff;
             color: #fff;
             border: none;
-            border-radius: 10px;
+            border-radius: 5px;
             cursor: pointer;
-            font-size: 1.1em;
-            transition: background-color 0.3s;
+            max-width: 150px;
+            margin: 0 auto;
         }
         button:hover {
             background-color: #0056b3;
+        }
+        .categories {
+            margin-top: 2em;
+        }
+        .category {
+            padding: 1em;
+            background: #f8f9fa;
+            border-radius: 10px;
+            margin-bottom: 1em;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .category:hover {
+            background-color: #e9ecef;
         }
         .sidebar {
             float: left;
             width: 25%;
             margin-right: 2em;
             background: #f8f9fa;
-            padding: 1.5em;
+            padding: 1em;
             border-radius: 10px;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
         }
         .content {
             float: left;
@@ -82,18 +93,21 @@
             padding: 0;
         }
         .category-list li {
-            padding: 0.8em;
+            padding: 0.5em;
             border-bottom: 1px solid #ccc;
         }
         .category-list li a {
             text-decoration: none;
             color: #007bff;
-            font-weight: 700;
-            transition: color 0.3s;
         }
         .category-list li a:hover {
-            color: #0056b3;
             text-decoration: underline;
+        }
+        .intro-text {
+            padding: 1em;
+            background: #e9ecef;
+            border-radius: 10px;
+            margin-bottom: 1em;
         }
     </style>
 </head>
@@ -103,27 +117,32 @@
             <h2>Kategoriler</h2>
             <ul class="category-list">
                 <li><a href="#teknoloji">Teknoloji ve Yenilikler</a></li>
-                <li><a href="#is">İş ve Girişimcilik</a></li>
-                <li><a href="#doga">Doğa ve Çevre</a></li>
-                <li><a href="#saglik">Sağlık ve Yaşam Tarzı</a></li>
-                <li><a href="#kultur">Kültür ve Sanat</a></li>
-                <li><a href="#bilim">Bilim ve Teknoloji Tarihi</a></li>
-                <li><a href="#gezi">Gezi ve Kültür</a></li>
-                <li><a href="#tarih">Tarih ve Mitoloji</a></li>
-                <li><a href="#guncel">Güncel Olaylar ve Trendler</a></li>
+                <li><a href="#is-girisimcilik">İş ve Girişimcilik</a></li>
+                <li><a href="#doga-cevre">Doğa ve Çevre</a></li>
+                <li><a href="#saglik-yasam">Sağlık ve Yaşam Tarzı</a></li>
+                <li><a href="#kultur-sanat">Kültür ve Sanat</a></li>
+                <li><a href="#bilim-teknoloji-tarihi">Bilim ve Teknoloji Tarihi</a></li>
+                <li><a href="#gezi-kultur">Gezi ve Kültür</a></li>
+                <li><a href="#tarih-mitoloji">Tarih ve Mitoloji</a></li>
+                <li><a href="#guncel-olaylar">Güncel Olaylar ve Trendler</a></li>
             </ul>
+            <div class="intro-text">
+                <strong>Bilgidir.com - Bilgiye Dair Her Şey!</strong>
+                <p>Bilgidir.com, sizlere teknoloji, sanat, bilim, sağlık gibi birçok farklı konuda bilgi sunmak amacıyla oluşturulmuş bir bilgi paylaşım platformudur. Öğrenmek istediğiniz herhangi bir konu hakkında bize sorularınızı iletebilir, kısa sürede sizlere detaylı bilgi sağlamak için buradayız.</p>
+                <p><strong>Kategorilerimizde gezinebilir, ilginizi çeken konuları keşfedebilirsiniz.</strong> Hedefimiz, bilgiye kolay erişimi ve paylaşımı mümkün kılmak!</p>
+            </div>
         </div>
         <div class="content">
             <div class="header">
                 <h1>Öğrenmek İstediğiniz Bilgiyi Bize İletin, Sizinle Bilgimizi Paylaşalım!</h1>
                 <form action="https://formspree.io/f/mnnqqqkw" method="POST">
-                    <label for="email" style="font-size: 1.1em; color: #fff;">Email Adresiniz:</label>
+                    <label for="email">Email Adresiniz:</label>
                     <input type="email" id="email" name="email" required>
-                    <label for="message" style="font-size: 1.1em; color: #fff;">Mesajınız:</label>
+                    <label for="message">Mesajınız:</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                     <button type="submit">Gönder</button>
                 </form>
-                <p style="font-size: 0.9em; color: #ccc;">bilgidir.com hata yapabilir. Önemli bilgileri kontrol edin.</p>
+                <p style="font-size: 0.9em; color: #666;">bilgidir.com hata yapabilir. Önemli bilgileri kontrol edin.</p>
             </div>
         </div>
     </div>
