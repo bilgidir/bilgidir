@@ -10,13 +10,13 @@
             font-family: 'Roboto', sans-serif;
             background-color: #f0f0f0;
             color: #333;
-            max-width: 900px;
+            max-width: 1200px;
             margin: 2em auto;
             padding: 1em;
             line-height: 1.6;
             background: #fff;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
         h1, h2 {
             color: #2c3e50;
@@ -24,26 +24,35 @@
         .header {
             text-align: center;
             margin-bottom: 2em;
-            padding: 1em;
-            background: #f8f9fa;
+            padding: 2em;
+            background: linear-gradient(135deg, #007bff, #00b4d8);
+            color: #fff;
             border-radius: 10px;
+        }
+        .header h1 {
+            font-size: 2.5em;
         }
         form {
             display: flex;
             flex-direction: column;
             gap: 1em;
             margin-bottom: 2em;
+            background: #f8f9fa;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         input[type="email"], textarea {
-            padding: 10px;
+            padding: 15px;
             border: 1px solid #ccc;
             border-radius: 5px;
             width: 100%;
             max-width: 600px;
             margin: 0 auto;
+            font-size: 1em;
         }
         button {
-            padding: 10px;
+            padding: 15px;
             background-color: #007bff;
             color: #fff;
             border: none;
@@ -51,6 +60,8 @@
             cursor: pointer;
             max-width: 200px;
             margin: 0 auto;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
         }
         button:hover {
             background-color: #0056b3;
@@ -76,6 +87,7 @@
             background: #f8f9fa;
             padding: 1em;
             border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .content {
             float: left;
@@ -97,6 +109,7 @@
         .category-list li a {
             text-decoration: none;
             color: #007bff;
+            font-weight: bold;
         }
         .category-list li a:hover {
             text-decoration: underline;
@@ -113,7 +126,7 @@
             <textarea id="message" name="message" rows="5" required></textarea>
             <button type="submit">Gönder</button>
         </form>
-        <p style="font-size: 0.9em; color: #666;">bilgidir.com hata yapabilir. Önemli bilgileri kontrol edin.</p>
+        <p style="font-size: 0.9em; color: #f8f9fa;">bilgidir.com hata yapabilir. Önemli bilgileri kontrol edin.</p>
     </div>
 
     <div class="clearfix">
@@ -121,18 +134,18 @@
             <h2>Kategoriler</h2>
             <ul class="category-list">
                 <li><a href="#teknoloji">Teknoloji ve Yenilikler</a></li>
-                <li><a href="#isgiris">İş ve Girişimcilik</a></li>
-                <li><a href="#dogacevre">Doğa ve Çevre</a></li>
-                <li><a href="#saglikyasam">Sağlık ve Yaşam Tarzı</a></li>
-                <li><a href="#kultursanat">Kültür ve Sanat</a></li>
-                <li><a href="#bilimteknoloji">Bilim ve Teknoloji Tarihi</a></li>
-                <li><a href="#gezikultur">Gezi ve Kültür</a></li>
-                <li><a href="#tarihmitoloji">Tarih ve Mitoloji</a></li>
-                <li><a href="#gunceltrend">Güncel Olaylar ve Trendler</a></li>
+                <li><a href="#is_girisimcilik">İş ve Girişimcilik</a></li>
+                <li><a href="#doga_cevresel">Doğa ve Çevre</a></li>
+                <li><a href="#saglik_yasam">Sağlık ve Yaşam Tarzı</a></li>
+                <li><a href="#kultur_sanat">Kültür ve Sanat</a></li>
+                <li><a href="#bilim_teknoloji">Bilim ve Teknoloji Tarihi</a></li>
+                <li><a href="#gezi_kultur">Gezi ve Kültür</a></li>
+                <li><a href="#tarih_mitoloji">Tarih ve Mitoloji</a></li>
+                <li><a href="#guncel_olaylar">Güncel Olaylar ve Trendler</a></li>
             </ul>
         </div>
         <div class="content">
-            <section id="kultursanat">
+            <section id="fotografcilik">
                 <h2>Fotoğrafçılık Tarihi</h2>
                 <p>Fotoğrafçılık, 19. yüzyılın başlarında icat edilen bir sanat ve belgeleme formudur. İlk fotoğraf, 1826 yılında Joseph Nicéphore Niépce tarafından çekilmiştir ve bu fotoğraf yaklaşık sekiz saatlik bir pozlama süresiyle elde edilmiştir. 1839 yılında Louis Daguerre, "dagerreyotip" adını verdiği bir teknikle daha hızlı ve net fotoğraflar elde etmeyi başarmış ve bu yöntem, fotoğrafçılığın yaygınlaşmasına büyük katkı sağlamıştır.</p>
 
