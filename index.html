@@ -21,15 +21,6 @@
         h1, h2 {
             color: #2c3e50;
         }
-        .header {
-            text-align: center;
-            margin-bottom: 1em;
-            padding: 1em;
-            background: #f8f9fa;
-            border-radius: 10px;
-            max-width: 600px;
-            margin: 0 auto;
-        }
         form {
             display: flex;
             flex-direction: column;
@@ -112,6 +103,17 @@
     </style>
 </head>
 <body>
+    <div class="header">
+        <h1>Öğrenmek İstediğiniz Bilgiyi Bize İletin, Sizinle Bilgimizi Paylaşalım!</h1>
+        <form action="https://formspree.io/f/mnnqqqkw" method="POST">
+            <label for="email">Email Adresiniz:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mesajınız:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Gönder</button>
+        </form>
+        <p style="font-size: 0.9em; color: #666;">bilgidir.com hata yapabilir. Önemli bilgileri kontrol edin.</p>
+    </div>
     <div class="clearfix">
         <div class="sidebar">
             <h2>Kategoriler</h2>
@@ -126,23 +128,12 @@
                 <li><a href="#tarih-mitoloji">Tarih ve Mitoloji</a></li>
                 <li><a href="#guncel-olaylar">Güncel Olaylar ve Trendler</a></li>
             </ul>
+        </div>
+        <div class="content">
             <div class="intro-text">
                 <strong>Bilgidir.com - Bilgiye Dair Her Şey!</strong>
                 <p>Bilgidir.com, sizlere teknoloji, sanat, bilim, sağlık gibi birçok farklı konuda bilgi sunmak amacıyla oluşturulmuş bir bilgi paylaşım platformudur. Öğrenmek istediğiniz herhangi bir konu hakkında bize sorularınızı iletebilir, kısa sürede sizlere detaylı bilgi sağlamak için buradayız.</p>
                 <p><strong>Kategorilerimizde gezinebilir, ilginizi çeken konuları keşfedebilirsiniz.</strong> Hedefimiz, bilgiye kolay erişimi ve paylaşımı mümkün kılmak!</p>
-            </div>
-        </div>
-        <div class="content">
-            <div class="header">
-                <h1>Öğrenmek İstediğiniz Bilgiyi Bize İletin, Sizinle Bilgimizi Paylaşalım!</h1>
-                <form action="https://formspree.io/f/mnnqqqkw" method="POST">
-                    <label for="email">Email Adresiniz:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Mesajınız:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                    <button type="submit">Gönder</button>
-                </form>
-                <p style="font-size: 0.9em; color: #666;">bilgidir.com hata yapabilir. Önemli bilgileri kontrol edin.</p>
             </div>
         </div>
     </div>
