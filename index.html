@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bilgidir - Bilgi Paylaşım Platformu</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #f0f0f0;
             color: #333;
-            max-width: 1200px;
+            max-width: 900px;
             margin: 2em auto;
             padding: 1em;
             line-height: 1.6;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1, h2 {
             color: #2c3e50;
@@ -23,29 +25,22 @@
             text-align: center;
             margin-bottom: 2em;
             padding: 1em;
-            background: linear-gradient(135deg, #007bff, #00c6ff);
+            background: #f8f9fa;
             border-radius: 10px;
-            color: #fff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
         form {
             display: flex;
             flex-direction: column;
             gap: 1em;
             margin-bottom: 2em;
-            background: #ffffff;
-            padding: 2em;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
         input[type="email"], textarea {
-            padding: 15px;
+            padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
             width: 100%;
             max-width: 600px;
             margin: 0 auto;
-            font-size: 1em;
         }
         button {
             padding: 10px;
@@ -56,8 +51,6 @@
             cursor: pointer;
             max-width: 200px;
             margin: 0 auto;
-            font-size: 1.1em;
-            transition: background-color 0.3s;
         }
         button:hover {
             background-color: #0056b3;
@@ -72,11 +65,9 @@
             margin-bottom: 1em;
             cursor: pointer;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s, box-shadow 0.3s;
         }
         .category:hover {
             background-color: #e9ecef;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
         }
         .sidebar {
             float: left;
@@ -85,7 +76,6 @@
             background: #f8f9fa;
             padding: 1em;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
         .content {
             float: left;
@@ -107,15 +97,9 @@
         .category-list li a {
             text-decoration: none;
             color: #007bff;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
         }
         .category-list li a:hover {
             text-decoration: underline;
-        }
-        .category-list li a i {
-            margin-right: 8px;
         }
     </style>
 </head>
@@ -129,22 +113,26 @@
             <textarea id="message" name="message" rows="5" required></textarea>
             <button type="submit">Gönder</button>
         </form>
-        <p style="font-size: 0.9em; color: #fff;">bilgidir.com hata yapabilir. Önemli bilgileri kontrol edin.</p>
+        <p style="font-size: 0.9em; color: #666;">bilgidir.com hata yapabilir. Önemli bilgileri kontrol edin.</p>
     </div>
 
     <div class="clearfix">
         <div class="sidebar">
             <h2>Kategoriler</h2>
             <ul class="category-list">
-                <li><a href="#fotografcilik"><i class="fas fa-camera-retro"></i>Fotoğrafçılık</a></li>
-                <li><a href="#tarih"><i class="fas fa-landmark"></i>Tarih</a></li>
-                <li><a href="#bilim"><i class="fas fa-flask"></i>Bilim</a></li>
-                <li><a href="#sanat"><i class="fas fa-palette"></i>Sanat</a></li>
-                <li><a href="#kultur"><i class="fas fa-globe"></i>Kültür</a></li>
+                <li><a href="#teknoloji">Teknoloji ve Yenilikler</a></li>
+                <li><a href="#isgiris">İş ve Girişimcilik</a></li>
+                <li><a href="#dogacevre">Doğa ve Çevre</a></li>
+                <li><a href="#saglikyasam">Sağlık ve Yaşam Tarzı</a></li>
+                <li><a href="#kultursanat">Kültür ve Sanat</a></li>
+                <li><a href="#bilimteknoloji">Bilim ve Teknoloji Tarihi</a></li>
+                <li><a href="#gezikultur">Gezi ve Kültür</a></li>
+                <li><a href="#tarihmitoloji">Tarih ve Mitoloji</a></li>
+                <li><a href="#gunceltrend">Güncel Olaylar ve Trendler</a></li>
             </ul>
         </div>
         <div class="content">
-            <section id="fotografcilik">
+            <section id="kultursanat">
                 <h2>Fotoğrafçılık Tarihi</h2>
                 <p>Fotoğrafçılık, 19. yüzyılın başlarında icat edilen bir sanat ve belgeleme formudur. İlk fotoğraf, 1826 yılında Joseph Nicéphore Niépce tarafından çekilmiştir ve bu fotoğraf yaklaşık sekiz saatlik bir pozlama süresiyle elde edilmiştir. 1839 yılında Louis Daguerre, "dagerreyotip" adını verdiği bir teknikle daha hızlı ve net fotoğraflar elde etmeyi başarmış ve bu yöntem, fotoğrafçılığın yaygınlaşmasına büyük katkı sağlamıştır.</p>
 
