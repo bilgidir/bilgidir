@@ -10,7 +10,7 @@
             font-family: 'Roboto', sans-serif;
             background-color: #f0f0f0;
             color: #333;
-            max-width: 900px;
+            max-width: 1200px;
             margin: 2em auto;
             padding: 1em;
             line-height: 1.6;
@@ -24,47 +24,35 @@
         .header {
             text-align: center;
             margin-bottom: 1em;
-            padding: 2em;
-            background: linear-gradient(135deg, #6dd5ed, #2193b0);
-            border-radius: 15px;
+            padding: 1em;
+            background: #f8f9fa;
+            border-radius: 10px;
             max-width: 600px;
             margin: 0 auto;
-            color: #fff;
         }
         form {
             display: flex;
             flex-direction: column;
-            align-items: center;
             gap: 1em;
             margin-bottom: 1em;
-            background: #ffffff;
-            padding: 2em;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
         input[type="email"], textarea {
-            padding: 15px;
+            padding: 10px;
             border: 1px solid #ccc;
-            border-radius: 10px;
+            border-radius: 5px;
             width: 100%;
             max-width: 500px;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-            font-size: 1em;
-        }
-        input[type="email"]:focus, textarea:focus {
-            border-color: #007bff;
-            outline: none;
-            box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+            margin: 0 auto;
         }
         button {
-            padding: 15px 30px;
+            padding: 10px;
             background-color: #007bff;
             color: #fff;
             border: none;
-            border-radius: 10px;
+            border-radius: 5px;
             cursor: pointer;
-            font-size: 1em;
-            transition: background-color 0.3s ease;
+            max-width: 150px;
+            margin: 0 auto;
         }
         button:hover {
             background-color: #0056b3;
@@ -123,28 +111,28 @@
             <h2>Kategoriler</h2>
             <ul class="category-list">
                 <li><a href="#teknoloji">Teknoloji ve Yenilikler</a></li>
-                <li><a href="#is">İş ve Girişimcilik</a></li>
+                <li><a href="#is-girisimcilik">İş ve Girişimcilik</a></li>
                 <li><a href="#dogacevre">Doğa ve Çevre</a></li>
                 <li><a href="#saglik">Sağlık ve Yaşam Tarzı</a></li>
-                <li><a href="#kultursanat">Kültür ve Sanat</a></li>
-                <li><a href="#bilimteknoloji">Bilim ve Teknoloji Tarihi</a></li>
-                <li><a href="#gezi">Gezi ve Kültür</a></li>
-                <li><a href="#tarihimito">Tarih ve Mitoloji</a></li>
-                <li><a href="#guncel">Güncel Olaylar ve Trendler</a></li>
+                <li><a href="#kultur-sanat">Kültür ve Sanat</a></li>
+                <li><a href="#bilim-tarih">Bilim ve Teknoloji Tarihi</a></li>
+                <li><a href="#gezi-kultur">Gezi ve Kültür</a></li>
+                <li><a href="#tarih-mitoloji">Tarih ve Mitoloji</a></li>
+                <li><a href="#guncel-olaylar">Güncel Olaylar ve Trendler</a></li>
             </ul>
         </div>
         <div class="content">
             <div class="header">
                 <h1>Öğrenmek İstediğiniz Bilgiyi Bize İletin, Sizinle Bilgimizi Paylaşalım!</h1>
+                <form action="https://formspree.io/f/mnnqqqkw" method="POST">
+                    <label for="email">Email Adresiniz:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Mesajınız:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <button type="submit">Gönder</button>
+                </form>
+                <p style="font-size: 0.9em; color: #666;">bilgidir.com hata yapabilir. Önemli bilgileri kontrol edin.</p>
             </div>
-            <form action="https://formspree.io/f/mnnqqqkw" method="POST">
-                <label for="email" style="font-weight: bold;">Email Adresiniz:</label>
-                <input type="email" id="email" name="email" placeholder="Email adresinizi girin" required>
-                <label for="message" style="font-weight: bold;">Mesajınız:</label>
-                <textarea id="message" name="message" rows="5" placeholder="Mesajınızı buraya yazın" required></textarea>
-                <button type="submit">Gönder</button>
-            </form>
-            <p style="font-size: 0.9em; color: #666; text-align: center;">bilgidir.com hata yapabilir. Önemli bilgileri kontrol edin.</p>
         </div>
     </div>
 </body>
