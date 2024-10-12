@@ -10,7 +10,7 @@
             font-family: 'Roboto', sans-serif;
             background-color: #f0f0f0;
             color: #333;
-            max-width: 800px;
+            max-width: 900px;
             margin: 2em auto;
             padding: 1em;
             line-height: 1.6;
@@ -21,63 +21,129 @@
         h1, h2 {
             color: #2c3e50;
         }
+        .header {
+            text-align: center;
+            margin-bottom: 2em;
+            padding: 1em;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
         form {
-            margin-top: 20px;
-            background: #f9f9f9;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            margin-bottom: 2em;
         }
-        input[type="text"], textarea {
-            width: calc(100% - 22px);
+        input[type="email"], textarea {
             padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ddd;
+            border: 1px solid #ccc;
             border-radius: 5px;
-            font-size: 1em;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
         }
-        input[type="submit"] {
-            background: #2c3e50;
-            color: white;
-            padding: 10px 15px;
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 1em;
+            max-width: 200px;
+            margin: 0 auto;
         }
-        input[type="submit"]:hover {
-            background: #34495e;
+        button:hover {
+            background-color: #0056b3;
         }
-        .note {
-            font-size: 0.8em;
-            color: #888;
-            margin-top: 10px;
+        .categories {
+            margin-top: 2em;
+        }
+        .category {
+            padding: 1em;
+            background: #f8f9fa;
+            border-radius: 10px;
+            margin-bottom: 1em;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .category:hover {
+            background-color: #e9ecef;
+        }
+        .sidebar {
+            float: left;
+            width: 25%;
+            margin-right: 2em;
+            background: #f8f9fa;
+            padding: 1em;
+            border-radius: 10px;
+        }
+        .content {
+            float: left;
+            width: 70%;
+        }
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .category-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .category-list li {
+            padding: 0.5em;
+            border-bottom: 1px solid #ccc;
+        }
+        .category-list li a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .category-list li a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>Öğrenmek İstediğiniz Bilgiyi Bize İletin, Sizinle Bilgimizi Paylaşalım!</h1>
-    <form action="https://formspree.io/f/mnnqqqkw" method="POST">
-        <label for="email">Email Adresiniz:</label><br>
-        <input type="text" id="email" name="email" placeholder="Email adresinizi girin" required><br>
-        <label for="message">Mesajınız:</label><br>
-        <textarea id="message" name="message" rows="4" placeholder="Öğrenmek istediğiniz bilgiyi yazın" required></textarea><br>
-        <input type="submit" value="Gönder">
-    </form>
-    <p class="note">bilgidir.com hata yapabilir. Önemli bilgileri kontrol edin.</p>
+    <div class="header">
+        <h1>Öğrenmek İstediğiniz Bilgiyi Bize İletin, Sizinle Bilgimizi Paylaşalım!</h1>
+        <form action="https://formspree.io/f/mnnqqqkw" method="POST">
+            <label for="email">Email Adresiniz:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mesajınız:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Gönder</button>
+        </form>
+        <p style="font-size: 0.9em; color: #666;">bilgidir.com hata yapabilir. Önemli bilgileri kontrol edin.</p>
+    </div>
 
-    <h2>Fotoğrafçılık Tarihi</h2>
-    <p>Fotoğrafçılık, 19. yüzyılın başlarında icat edilen bir sanat ve belgeleme formudur. İlk fotoğraf, 1826 yılında Joseph Nicéphore Niépce tarafından çekilmiştir ve bu fotoğraf yaklaşık sekiz saatlik bir pozlama süresiyle elde edilmiştir. 1839 yılında Louis Daguerre, "dagerreyotip" adını verdiği bir teknikle daha hızlı ve net fotoğraflar elde etmeyi başarmış ve bu yöntem, fotoğrafçılığın yaygınlaşmasına büyük katkı sağlamıştır.</p>
+    <div class="clearfix">
+        <div class="sidebar">
+            <h2>Kategoriler</h2>
+            <ul class="category-list">
+                <li><a href="#fotografcilik">Fotoğrafçılık</a></li>
+                <li><a href="#tarih">Tarih</a></li>
+                <li><a href="#bilim">Bilim</a></li>
+                <li><a href="#sanat">Sanat</a></li>
+                <li><a href="#kultur">Kültür</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <section id="fotografcilik">
+                <h2>Fotoğrafçılık Tarihi</h2>
+                <p>Fotoğrafçılık, 19. yüzyılın başlarında icat edilen bir sanat ve belgeleme formudur. İlk fotoğraf, 1826 yılında Joseph Nicéphore Niépce tarafından çekilmiştir ve bu fotoğraf yaklaşık sekiz saatlik bir pozlama süresiyle elde edilmiştir. 1839 yılında Louis Daguerre, "dagerreyotip" adını verdiği bir teknikle daha hızlı ve net fotoğraflar elde etmeyi başarmış ve bu yöntem, fotoğrafçılığın yaygınlaşmasına büyük katkı sağlamıştır.</p>
 
-    <p>20. yüzyılın başlarına gelindiğinde, fotoğrafçılık hem sanatsal hem de belgesel amaçlarla kullanılmaya başlandı. Kodak'ın kurulması ve taşınabilir fotoğraf makinelerinin piyasaya sürülmesi, fotoğrafçılığın daha geniş kitlelere yayılmasına neden oldu. Renkli fotoğrafçılık da bu dönemde gelişmeye başlamış ve 20. yüzyılın ortalarında popüler hale gelmiştir.</p>
+                <p>20. yüzyılın başlarına gelindiğinde, fotoğrafçılık hem sanatsal hem de belgesel amaçlarla kullanılmaya başlandı. Kodak'ın kurulması ve taşınabilir fotoğraf makinelerinin piyasaya sürülmesi, fotoğrafçılığın daha geniş kitlelere yayılmasına neden oldu. Renkli fotoğrafçılık da bu dönemde gelişmeye başlamış ve 20. yüzyılın ortalarında popüler hale gelmiştir.</p>
 
-    <h2>Ünlü Fotoğrafçılar</h2>
-    <ul>
-        <li><strong>Ansel Adams:</strong> Doğa fotoğrafçılığı ve özellikle Amerika'nın batısındaki milli parkların fotoğrafları ile tanınır. Siyah-beyaz fotoğrafçılıkta ustalaşmış ve Zone System adı verilen bir teknik geliştirmiştir.</li>
-        <li><strong>Henri Cartier-Bresson:</strong> Belgesel ve sokak fotoğrafçılığının öncüsü olan Bresson, anı yakalama ("decisive moment") kavramını geliştirmiştir ve bu sayede birçok unutulmaz fotoğrafa imza atmıştır.</li>
-        <li><strong>Dorothea Lange:</strong> Büyük Buhran dönemi Amerika'sında çektiği belgesel fotoğrafları ile tanınan Lange, özellikle tarım işçilerinin ve zor durumdaki ailelerin hayatlarını belgeleyen çalışmalarıyla bilinmektedir.</li>
-        <li><strong>Steve McCurry:</strong> 1984 yılında National Geographic dergisi için çektiği "Afgan Kızı" fotoğrafı, dünyanın en ünlü portrelerinden biri olmuştur. Çalışmaları genellikle çatışma bölgelerindeki insanları ve kültürel hayatı belgelemiştir.</li>
-        <li><strong>Egemen Pırlant:</strong> Günümüz fotoğrafçılarından olan Egemen Pırlant, özellikle sokak fotoğrafçılığı ve şehir yaşamını belgeleyen tarzıyla tanınmaktadır. Modern şehirlerin dinamizmini ve günlük hayatın anlarını yakalamadaki yeteneği, onu bu alanda öne çıkan isimlerden biri yapmaktadır.</li>
-    </ul>
+                <h2>Ünlü Fotoğrafçılar</h2>
+                <ul>
+                    <li><strong>Ansel Adams:</strong> Doğa fotoğrafçılığı ve özellikle Amerika'nın batısındaki milli parkların fotoğrafları ile tanınır. Siyah-beyaz fotoğrafçılıkta ustalaşmış ve Zone System adı verilen bir teknik geliştirmiştir.</li>
+                    <li><strong>Henri Cartier-Bresson:</strong> Belgesel ve sokak fotoğrafçılığının öncüsü olan Bresson, anı yakalama ("decisive moment") kavramını geliştirmiştir ve bu sayede birçok unutulmaz fotoğrafa imza atmıştır.</li>
+                    <li><strong>Dorothea Lange:</strong> Büyük Buhran dönemi Amerika'sında çektiği belgesel fotoğrafları ile tanınan Lange, özellikle tarım işçilerinin ve zor durumdaki ailelerin hayatlarını belgeleyen çalışmalarıyla bilinmektedir.</li>
+                    <li><strong>Steve McCurry:</strong> 1984 yılında National Geographic dergisi için çektiği "Afgan Kızı" fotoğrafı, dünyanın en ünlü portrelerinden biri olmuştur. Çalışmaları genellikle çatışma bölgelerindeki insanları ve kültürel hayatı belgelemiştir.</li>
+                    <li><strong>Egemen Pırlant:</strong> Günümüz fotoğrafçılarından olan Egemen Pırlant, özellikle sokak fotoğrafçılığı ve şehir yaşamını belgeleyen tarzıyla tanınmaktadır. Modern şehirlerin dinamizmini ve günlük hayatın anlarını yakalamadaki yeteneği, onu bu alanda öne çıkan isimlerden biri yapmaktadır.</li>
+                </ul>
+            </section>
+        </div>
+    </div>
 </body>
 </html>
