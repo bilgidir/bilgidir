@@ -1,100 +1,96 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bilgidir.com - Blog</title>
+    <title>Fotoğrafçılığın Tarihi ve Ünlü Fotoğrafçılar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
+            font-family: 'Roboto', sans-serif;
             background-color: #f0f0f0;
-        }
-
-        .container {
-            width: 80%;
+            color: #333;
             max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
+            margin: 2em auto;
+            padding: 1em;
+            line-height: 1.6;
+            background: #fff;
+            border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        h1 {
-            text-align: center;
-            color: #333;
+        h1, h2 {
+            color: #2c3e50;
         }
-
-        .blog-post {
-            margin-bottom: 40px;
+        .contact-section {
+            margin-top: 2em;
+            padding: 1em;
+            background-color: #e8f4f8;
+            border-radius: 10px;
         }
-
-        .blog-title {
-            font-size: 1.8em;
-            margin-bottom: 10px;
-            color: #333;
+        .contact-section h2 {
+            margin-bottom: 0.5em;
         }
-
-        .blog-content {
-            color: #555;
+        .contact-section form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-section label {
+            margin-bottom: 0.5em;
+        }
+        .contact-section input, .contact-section textarea {
+            margin-bottom: 1em;
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-section button {
+            padding: 0.7em;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-section button:hover {
+            background-color: #1a252f;
         }
     </style>
 </head>
-
 <body>
-    <div class="container">
-        <h1>Bilgidir.com Blogu</h1>
+    <h1>Fotoğrafçılığın Tarihi</h1>
+    <p>Fotoğrafçılık, 19. yüzyılın başlarında icat edilen bir sanat ve belgeleme formudur. İlk fotoğraf, 1826 yılında Joseph Nicéphore Niépce tarafından çekilmiştir ve bu fotoğraf yaklaşık sekiz saatlik bir pozlama süresiyle elde edilmiştir. 1839 yılında Louis Daguerre, "dagerreyotip" adını verdiği bir teknikle daha hızlı ve net fotoğraflar elde etmeyi başarmış ve bu yöntem, fotoğrafçılığın yaygınlaşmasına büyük katkı sağlamıştır.</p>
 
-        <!-- Blog Yazıları -->
-        <div id="blog-posts">
-            <!-- Mevcut gönderiler buraya eklenecek -->
-        </div>
+    <p>20. yüzyılın başlarına gelindiğinde, fotoğrafçılık hem sanatsal hem de belgesel amaçlarla kullanılmaya başlandı. Kodak'ın kurulması ve taşınabilir fotoğraf makinelerinin piyasaya sürülmesi, fotoğrafçılığın daha geniş kitlelere yayılmasına neden oldu. Renkli fotoğrafçılık da bu dönemde gelişmeye başlamış ve 20. yüzyılın ortalarında popüler hale gelmiştir.</p>
+
+    <h2>Ünlü Fotoğrafçılar</h2>
+    <ul>
+        <li><strong>Ansel Adams:</strong> Doğa fotoğrafçılığı ve özellikle Amerika'nın batısındaki milli parkların fotoğrafları ile tanınır. Siyah-beyaz fotoğrafçılıkta ustalaşmış ve Zone System adı verilen bir teknik geliştirmiştir.</li>
+        <li><strong>Henri Cartier-Bresson:</strong> Belgesel ve sokak fotoğrafçılığının öncüsü olan Bresson, anı yakalama ("decisive moment") kavramını geliştirmiştir ve bu sayede birçok unutulmaz fotoğrafa imza atmıştır.</li>
+        <li><strong>Dorothea Lange:</strong> Büyük Buhran dönemi Amerika'sında çektiği belgesel fotoğrafları ile tanınan Lange, özellikle tarım işçilerinin ve zor durumdaki ailelerin hayatlarını belgeleyen çalışmalarıyla bilinmektedir.</li>
+        <li><strong>Steve McCurry:</strong> 1984 yılında National Geographic dergisi için çektiği "Afgan Kızı" fotoğrafı, dünyanın en ünlü portrelerinden biri olmuştur. Çalışmaları genellikle çatışma bölgelerindeki insanları ve kültürel hayatı belgelemiştir.</li>
+        <li><strong>Egemen Pırlant:</strong> Günümüz fotoğrafçılarından olan Egemen Pırlant, özellikle sokak fotoğrafçılığı ve şehir yaşamını belgeleyen tarzıyla tanınmaktadır. Modern şehirlerin dinamizmini ve günlük hayatın anlarını yakalamadaki yeteneği, onu bu alanda öne çıkan isimlerden biri yapmaktadır.</li>
+    </ul>
+
+    <div class="contact-section">
+        <h2>Bizimle İletişime Geçin</h2>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <label for="name">İsim:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mesajınız:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <input type="hidden" name="_replyto" value="info@bilgidir.com">
+
+            <button type="submit">Gönder</button>
+        </form>
     </div>
 
-    <script>
-        // Mevcut blog yazıları listesi
-        const blogPosts = [
-            {
-                title: "Gergedanların Gizemli Dünyası: Devlerin Sakin Yaşamı",
-                content: `
-                    Gergedanlar, genellikle sakin ve yalnız yaşayan devasa otçullardır. Her bir türünün kendine has özellikleri olsa da, hepsinin ortak noktası güçlü yapıları ve etkileyici boynuzlarıdır. İşte gergedanlar hakkında ilginç bilgiler:
-                    <ul>
-                        <li><strong>Çamur Banyosu Aşığı:</strong> Gergedanlar günlerinin büyük bir kısmını çamur banyosunda geçirirler. Bu banyolar onları serinletmenin yanı sıra parazitlerden de korur. Aynı zamanda ciltlerinin nemli kalmasına yardımcı olur.</li>
-                        <li><strong>Güçlü Ama Hızlı:</strong> Gergedanlar görünümlerinin aksine kısa mesafelerde oldukça hızlı koşabilirler. Saate yaklaşık 50 kilometre hızla koşabilirler ve bu, onları tehdit eden yırtıcı hayvanlardan kaçarken çok işlerine yarar.</li>
-                        <li><strong>Boynuzları Özel ve Kırılgan:</strong> Gergedanın boynuzu, keratin adı verilen bir maddeden oluşur. Bu madde, insan tırnağı ve saçının yapı taşlarıyla aynıdır. Boynuzları oldukça değerli olmasına rağmen, ne yazık ki bu durum onları kaçak avcıların hedefi haline getiriyor.</li>
-                    </ul>
-                `
-            },
-            {
-                title: "Everest Dağı'nın Sırları",
-                content: `
-                    Everest Dağı, dünyanın en yüksek zirvesi olarak kabul ediliyor. Zirveye ulaşmak isteyen birçok dağcı, yıllarca süren hazırlıklar ve tehlikelerle dolu bir yolculuk yapıyor. İşte Everest Dağı hakkında ilginç bilgiler:
-                    <ul>
-                        <li><strong>Yükseklik:</strong> Everest'in yüksekliği yaklaşık 8,848 metredir ve Himalayalar'da yer alır.</li>
-                        <li><strong>Ölüm Bölgesi:</strong> Zirveye tırmanmaya çalışan insanların birçoğu "ölüm bölgesi" olarak adlandırılan, oksijenin çok düşük olduğu 8,000 metre civarında zorlanır.</li>
-                        <li><strong>Çöp Sorunu:</strong> Dağda, dağcıların bıraktığı çöp ve ekipmanlar nedeniyle devasa bir atık sorunu vardır; her yıl tonlarca çöp toplanmaktadır.</li>
-                    </ul>
-                `
-            }
-        ];
-
-        // Blog yazılarını sayfaya ekleme
-        const blogPostsContainer = document.getElementById('blog-posts');
-
-        blogPosts.forEach(post => {
-            const postElement = document.createElement('div');
-            postElement.classList.add('blog-post');
-            postElement.innerHTML = `
-                <h2 class="blog-title">${post.title}</h2>
-                <div class="blog-content">${post.content}</div>
-            `;
-            blogPostsContainer.appendChild(postElement);
-        });
-    </script>
+    <footer>
+        <p>bilgidir.com hata yapabilir. Önemli bilgileri kontrol edin.</p>
+    </footer>
 </body>
-
 </html>
