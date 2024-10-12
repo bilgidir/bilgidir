@@ -21,40 +21,77 @@
         h1, h2 {
             color: #2c3e50;
         }
-        #header {
-            position: sticky;
-            top: 0;
-            background: #ffffff;
-            padding: 1em;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        .header-section {
             text-align: center;
+            background-color: #3498db;
+            color: #fff;
+            padding: 1.5em;
+            border-radius: 10px;
+            margin-bottom: 1.5em;
         }
-        #header h1 {
+        .header-section h1 {
+            font-size: 2em;
             margin: 0;
         }
-        #form-section {
-            margin: 2em 0;
+        .form-container {
+            background-color: #ecf0f1;
+            padding: 1.5em;
+            border-radius: 10px;
+            margin-bottom: 1.5em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+        .form-container label {
+            font-weight: bold;
+            display: block;
+            margin-top: 0.5em;
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-top: 0.5em;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+        }
+        .form-container button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 0.75em 1.5em;
+            margin-top: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .form-container button:hover {
+            background-color: #2980b9;
+        }
+        .note {
             text-align: center;
+            font-size: 0.9em;
+            color: #7f8c8d;
+            margin-top: 1em;
         }
     </style>
 </head>
 <body>
-    <div id="header">
+    <div class="header-section">
         <h1>Öğrenmek İstediğiniz Bilgiyi Bize İletin, Sizinle Bilgimizi Paylaşalım!</h1>
     </div>
 
-    <div id="form-section">
+    <div class="form-container">
         <form action="https://formspree.io/f/mnnqqqkw" method="POST">
-            <label for="email">Email Adresiniz:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="message">Mesajınız:</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <label for="email">Email Adresiniz:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mesajınız:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
             <button type="submit">Gönder</button>
         </form>
-        <p><small>bilgidir.com hata yapabilir. Önemli bilgileri kontrol edin.</small></p>
+        <p class="note">bilgidir.com hata yapabilir. Önemli bilgileri kontrol edin.</p>
     </div>
 
-    <h1>Fotoğrafçılığın Tarihi</h1>
+    <h2>Fotoğrafçılığın Tarihi</h2>
     <p>Fotoğrafçılık, 19. yüzyılın başlarında icat edilen bir sanat ve belgeleme formudur. İlk fotoğraf, 1826 yılında Joseph Nicéphore Niépce tarafından çekilmiştir ve bu fotoğraf yaklaşık sekiz saatlik bir pozlama süresiyle elde edilmiştir. 1839 yılında Louis Daguerre, "dagerreyotip" adını verdiği bir teknikle daha hızlı ve net fotoğraflar elde etmeyi başarmış ve bu yöntem, fotoğrafçılığın yaygınlaşmasına büyük katkı sağlamıştır.</p>
 
     <p>20. yüzyılın başlarına gelindiğinde, fotoğrafçılık hem sanatsal hem de belgesel amaçlarla kullanılmaya başlandı. Kodak'ın kurulması ve taşınabilir fotoğraf makinelerinin piyasaya sürülmesi, fotoğrafçılığın daha geniş kitlelere yayılmasına neden oldu. Renkli fotoğrafçılık da bu dönemde gelişmeye başlamış ve 20. yüzyılın ortalarında popüler hale gelmiştir.</p>
