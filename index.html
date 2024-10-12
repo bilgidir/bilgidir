@@ -21,38 +21,31 @@
         h1, h2 {
             color: #2c3e50;
         }
-        .contact-section {
+        form {
             margin-top: 2em;
             padding: 1em;
-            background-color: #e8f4f8;
+            background: #e9e9e9;
             border-radius: 10px;
         }
-        .contact-section h2 {
+        label {
+            display: block;
             margin-bottom: 0.5em;
+            font-weight: bold;
         }
-        .contact-section form {
-            display: flex;
-            flex-direction: column;
-        }
-        .contact-section label {
-            margin-bottom: 0.5em;
-        }
-        .contact-section input, .contact-section textarea {
-            margin-bottom: 1em;
+        input, textarea {
+            width: 100%;
             padding: 0.5em;
+            margin-bottom: 1em;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-        .contact-section button {
-            padding: 0.7em;
+        button {
+            padding: 0.7em 1.5em;
             background-color: #2c3e50;
-            color: white;
+            color: #fff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-        }
-        .contact-section button:hover {
-            background-color: #1a252f;
         }
     </style>
 </head>
@@ -71,26 +64,19 @@
         <li><strong>Egemen Pırlant:</strong> Günümüz fotoğrafçılarından olan Egemen Pırlant, özellikle sokak fotoğrafçılığı ve şehir yaşamını belgeleyen tarzıyla tanınmaktadır. Modern şehirlerin dinamizmini ve günlük hayatın anlarını yakalamadaki yeteneği, onu bu alanda öne çıkan isimlerden biri yapmaktadır.</li>
     </ul>
 
-    <div class="contact-section">
-        <h2>Bizimle İletişime Geçin</h2>
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-            <label for="name">İsim:</label>
-            <input type="text" id="name" name="name" required>
+    <form action="https://formspree.io/f/mnnqqqkw" method="POST">
+        <label for="name">Adınız:</label>
+        <input type="text" id="name" name="name" required>
 
-            <label for="email">E-posta:</label>
-            <input type="email" id="email" name="email" required>
+        <label for="email">E-posta Adresiniz:</label>
+        <input type="email" id="email" name="email" required>
 
-            <label for="message">Mesajınız:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+        <label for="message">Mesajınız:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-            <input type="hidden" name="_replyto" value="info@bilgidir.com">
+        <button type="submit">Gönder</button>
+    </form>
 
-            <button type="submit">Gönder</button>
-        </form>
-    </div>
-
-    <footer>
-        <p>bilgidir.com hata yapabilir. Önemli bilgileri kontrol edin.</p>
-    </footer>
+    <p><strong>Dipnot:</strong> bilgidir.com hata yapabilir. Önemli bilgileri kontrol edin.</p>
 </body>
 </html>
