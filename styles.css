@@ -1,33 +1,37 @@
+body {
+    background-color: #333;  /* Koyu gri arka plan */
+    color: white;
+}
+
 main {
     display: flex;
     justify-content: space-between;
-    padding: 80px 40px;  /* Daha fazla boşluk */
-    background-color: #f9f9f9;
+    padding: 80px 40px;
 }
 
 .contact-form form {
-    background: #fff;
+    background: #444;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  /* Hafif gölge */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .contact-form button {
     padding: 12px 24px;
-    background-color: #0056b3;
+    background-color: #ff5722;
     color: white;
     border: none;
-    border-radius: 12px;  /* Yuvarlak köşeler */
+    border-radius: 10px;
     cursor: pointer;
 }
 
 .contact-form button:hover {
-    background-color: #0046a0;
+    background-color: #e64a19;
 }
 
 .warning {
     text-align: center;
-    color: #ff6666;  /* Hafif kırmızı renk */
+    color: #f44336;  /* Daha koyu kırmızı */
     font-size: 13px;
     margin-top: 20px;
 }
