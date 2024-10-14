@@ -1,37 +1,37 @@
 body {
-    background-color: #333;  /* Koyu gri arka plan */
-    color: white;
+    background-color: #f7ebe8;
 }
 
 main {
     display: flex;
     justify-content: space-between;
-    padding: 80px 40px;
+    padding: 70px 50px;
 }
 
 .contact-form form {
-    background: #444;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background: #fff3e0;
+    padding: 30px;
+    border-radius: 16px;
+    border: 3px solid #ff7043;  /* Retro renkler */
 }
 
 .contact-form button {
-    padding: 12px 24px;
-    background-color: #ff5722;
+    padding: 10px 24px;
+    background-color: #ff7043;
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 16px;
     cursor: pointer;
 }
 
 .contact-form button:hover {
-    background-color: #e64a19;
+    background-color: #f4511e;
 }
 
 .warning {
     text-align: center;
-    color: #f44336;  /* Daha koyu kırmızı */
-    font-size: 13px;
+    color: #ff3d00;
+    font-size: 14px;
     margin-top: 20px;
+    font-weight: bold;
 }
