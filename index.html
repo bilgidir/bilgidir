@@ -10,18 +10,32 @@
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             color: #333;
-            text-align: center;
         }
         header {
             background-color: #007BFF;
             color: white;
             padding: 20px;
             font-size: 24px;
+            text-align: center;
+        }
+        .background {
+            background-image: url('/tasarim.png'); /* Önceki görseli buraya ekledik */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
         }
         .container {
             max-width: 1200px;
-            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.9); /* Beyaz bir arka plan, yarı şeffaf */
             padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         }
         .categories {
             display: flex;
@@ -75,7 +89,7 @@
             background-color: #333;
             color: white;
             padding: 10px 0;
-            margin-top: 20px;
+            text-align: center;
             font-size: 14px;
         }
     </style>
@@ -84,32 +98,34 @@
     <header>
         Bilgidir.com
     </header>
-    <div class="container">
-        <h2>Kategoriler</h2>
-        <div class="categories">
-            <div class="category-card">
-                <img src="/icons/e-ticaret.png" alt="E-Ticaret">
-                <h3>E-Ticaret</h3>
-                <p>Trendyol, Amazon ve daha fazlası hakkında bilgi alın.</p>
-                <a href="/e-ticaret.html">Keşfet</a>
-            </div>
-            <div class="category-card">
-                <img src="/icons/teknoloji.png" alt="Teknoloji">
-                <h3>Teknoloji</h3>
-                <p>En güncel teknoloji haberleri ve ipuçları burada.</p>
-                <a href="/teknoloji.html">Keşfet</a>
-            </div>
-            <div class="category-card">
-                <img src="/icons/kisisel-gelisim.png" alt="Kişisel Gelişim">
-                <h3>Kişisel Gelişim</h3>
-                <p>Daha üretken olmak ve yeni şeyler öğrenmek için içerikler.</p>
-                <a href="/kisisel-gelisim.html">Keşfet</a>
-            </div>
-            <div class="category-card">
-                <img src="/icons/pratik-bilgiler.png" alt="Pratik Bilgiler">
-                <h3>Pratik Bilgiler</h3>
-                <p>Hayatınızı kolaylaştıracak tüyolar ve öneriler.</p>
-                <a href="/pratik-bilgiler.html">Keşfet</a>
+    <div class="background">
+        <div class="container">
+            <h2>Kategoriler</h2>
+            <div class="categories">
+                <div class="category-card">
+                    <img src="/icons/e-ticaret.png" alt="E-Ticaret">
+                    <h3>E-Ticaret</h3>
+                    <p>Trendyol, Amazon ve daha fazlası hakkında bilgi alın.</p>
+                    <a href="/e-ticaret.html">Keşfet</a>
+                </div>
+                <div class="category-card">
+                    <img src="/icons/teknoloji.png" alt="Teknoloji">
+                    <h3>Teknoloji</h3>
+                    <p>En güncel teknoloji haberleri ve ipuçları burada.</p>
+                    <a href="/teknoloji.html">Keşfet</a>
+                </div>
+                <div class="category-card">
+                    <img src="/icons/kisisel-gelisim.png" alt="Kişisel Gelişim">
+                    <h3>Kişisel Gelişim</h3>
+                    <p>Daha üretken olmak ve yeni şeyler öğrenmek için içerikler.</p>
+                    <a href="/kisisel-gelisim.html">Keşfet</a>
+                </div>
+                <div class="category-card">
+                    <img src="/icons/pratik-bilgiler.png" alt="Pratik Bilgiler">
+                    <h3>Pratik Bilgiler</h3>
+                    <p>Hayatınızı kolaylaştıracak tüyolar ve öneriler.</p>
+                    <a href="/pratik-bilgiler.html">Keşfet</a>
+                </div>
             </div>
         </div>
     </div>
